@@ -22,6 +22,7 @@ import MDBox from "components/MDBox";
 // Material Dashboard 2 React example components
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+import MDTypography from "components/MDTypography";
 import Footer from "examples/Footer";
 import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
@@ -41,7 +42,17 @@ function Dashboard() {
   return (
     <DashboardLayout>
       <DashboardNavbar />
-      <MDBox py={3}>
+      <MDBox
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        height="80vh" // Ajuste conforme necessário para centralizar verticalmente
+      >
+        <MDTypography variant="h4" color="text">
+          Em breve...
+        </MDTypography>
+      </MDBox>
+      {/* <MDBox py={3}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
@@ -154,8 +165,7 @@ function Dashboard() {
             </Grid>
           </Grid>
         </MDBox>
-      </MDBox>
-      <Footer />
+      </MDBox> */}
     </DashboardLayout>
   );
 }

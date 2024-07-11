@@ -38,7 +38,7 @@ function Footer({ light }) {
           width="100%"
           display="flex"
           flexDirection={{ xs: "column", lg: "row" }}
-          justifyContent="space-between"
+          justifyContent="center"
           alignItems="center"
           px={1.5}
         >
@@ -50,19 +50,12 @@ function Footer({ light }) {
             color={light ? "white" : "text"}
             fontSize={size.sm}
           >
-            &copy; {new Date().getFullYear()}, made with
-            <MDBox fontSize={size.md} color={light ? "white" : "dark"} mb={-0.5} mx={0.25}>
-              <Icon color="inherit" fontSize="inherit">
-                favorite
-              </Icon>
-            </MDBox>
-            by
-            <Link href="https://www.creative-tim.com/" target="_blank">
+            &copy; {new Date().getFullYear()} - Desenvolvido por
+            <Link href="https://wa.me/5534993246299" target="_blank">
               <MDTypography variant="button" fontWeight="medium" color={light ? "white" : "dark"}>
-                &nbsp;Creative Tim&nbsp;
+                &nbsp;Samuel Vieira&nbsp;
               </MDTypography>
             </Link>
-            for a better web.
           </MDBox>
           <MDBox
             component="ul"
@@ -81,7 +74,7 @@ function Footer({ light }) {
               },
             })}
           >
-            <MDBox component="li" pr={2} lineHeight={1}>
+            {/* <MDBox component="li" pr={2} lineHeight={1}>
               <Link href="https://www.creative-tim.com/" target="_blank">
                 <MDTypography
                   variant="button"
@@ -124,7 +117,7 @@ function Footer({ light }) {
                   License
                 </MDTypography>
               </Link>
-            </MDBox>
+            </MDBox> */}
           </MDBox>
         </MDBox>
       </Container>
